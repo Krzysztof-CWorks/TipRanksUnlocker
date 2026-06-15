@@ -1,0 +1,19 @@
+/*
+ * Pierwsza linia obrony: ukrycie nakładki paywall zanim się wyrenderuje (brak migotania).
+ * Nakładka to pełnoekranowy overlay z półprzezroczystym czarnym tłem (bgAlpha90),
+ * przyklejony do wszystkich krawędzi (anchorall) i pozycjonowany absolutnie.
+ */
+div.positionabsolute.anchorall.bgAlpha90,
+div.positionabsolute.anchorall.bgAlpha90.animationgoUp {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* TipRanks blokuje przewijanie strony pod nakładką — przywracamy je. */
+html.noScroll,
+body.noScroll,
+html[style*="overflow"],
+body[style*="overflow"] {
+  overflow: auto !important;
+}
