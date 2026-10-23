@@ -4,7 +4,7 @@
  * przyklejony do wszystkich krawędzi (anchorall) i pozycjonowany absolutnie.
  */
 div.positionabsolute.anchorall.bgAlpha90,
-div.positionabsolute.anchorall.bgAlpha90.animationgoUp {
+div.bgblack.anchorall.animationgoUp.filtershadow {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;

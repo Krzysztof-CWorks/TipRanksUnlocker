@@ -13,8 +13,13 @@
   // Tekst-sygnatura nakładki (odporny na zmiany klas CSS).
   const SIGNATURE_TEXT = "reached your limit of free investment research";
 
-  // Selektor strukturalny: pełnoekranowy overlay z półprzezroczystym tłem.
-  const OVERLAY_SELECTOR = "div.positionabsolute.anchorall.bgAlpha90";
+  // Selektory strukturalne: pełnoekranowy overlay z półprzezroczystym tłem.
+  const OVERLAY_SELECTOR = [
+    "div.positionabsolute.anchorall.bgAlpha90",
+    // Wariant z animacją wjazdu: "bgblack flexcsc w12 px3 displayflex positionabsolute
+    // h12 anchorall bgAlpha90 z3 animationgoUp filtershadow"
+    "div.bgblack.anchorall.animationgoUp.filtershadow",
+  ].join(", ");
 
   function isOverlay(el) {
     if (!(el instanceof HTMLElement)) return false;

@@ -2,10 +2,10 @@
   "manifest_version": 3,
   "name": "TipRanks Unlocker",
   "version": "1.0.0",
-  "description": "Ukrywa nakładkę paywall (\"You've reached your limit of free investment research\") na stronach TipRanks /stocks/*.",
+  "description": "Ukrywa nakładkę paywall (\"You've reached your limit of free investment research\") na stronach TipRanks.",
   "content_scripts": [
     {
-      "matches": ["https://www.tipranks.com/stocks/*"],
+      "matches": ["https://www.tipranks.com/*"],
       "js": ["content.js"],
       "css": ["styles.css"],
       "run_at": "document_start",
